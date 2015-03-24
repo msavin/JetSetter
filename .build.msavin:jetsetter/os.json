@@ -1,0 +1,43 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages/msavin:jetsetter/jetsetter.html",
+      "length": 534,
+      "offset": 0,
+      "servePath": "/packages/msavin:jetsetter/jetsetter.html",
+      "path": "jetsetter.html"
+    },
+    {
+      "type": "asset",
+      "file": "os/packages/msavin:jetsetter/jetsetter.css",
+      "length": 863,
+      "offset": 0,
+      "servePath": "/packages/msavin:jetsetter/jetsetter.css",
+      "path": "jetsetter.css"
+    },
+    {
+      "type": "asset",
+      "file": "os/packages/msavin:jetsetter/Liberation.ttf",
+      "length": 61144,
+      "offset": 0,
+      "servePath": "/packages/msavin:jetsetter/Liberation.ttf",
+      "path": "Liberation.ttf"
+    },
+    {
+      "type": "prelink",
+      "file": "os/packages/msavin:jetsetter.js",
+      "length": 16084,
+      "offset": 0,
+      "servePath": "/packages/msavin:jetsetter.js",
+      "sourceMap": "os/packages/msavin:jetsetter.js.map"
+    }
+  ]
+}

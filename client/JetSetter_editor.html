@@ -1,0 +1,25 @@
+<template name="JetSetter_editor">
+	<div class="JetSetter_editor">
+		
+		{{#if editing}}
+			<div class="JetSetter_editor_header">
+				<div class="JetSetter_editor_button JetSetter_button_save">Save</div>
+				<div class="JetSetter_editor_button JetSetter_button_cancel">Cancel</div>
+				Value 
+			</div>
+			<div class="JetSetter_editor_content JetSetter_editor_content_editing" id="JetSetter_editor_{{this}}" contenteditable="true">
+				<pre>{{{content}}}</pre>
+			</div>
+		{{else}}
+			<div class="JetSetter_editor_header">
+				<div class="JetSetter_editor_button JetSetter_button_edit">Edit</div>
+				<div class="JetSetter_editor_button JetSetter_button_drop">Drop</div>
+				Value 
+			</div>
+			<div class="JetSetter_editor_content">
+				<pre>{{{content}}}</pre>
+			</div>
+		{{/if}}
+
+	</div>
+</template>

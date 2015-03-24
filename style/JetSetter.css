@@ -1,0 +1,159 @@
+#JetSetter {
+  right: 0;
+  bottom: 0;
+  overflow: scroll; 
+  max-height: 100%;
+  cursor: default;
+}
+
+.JetSetter_row, .JetSetter_row_empty {
+  margin-bottom: 1px;
+  padding: 0 7px;
+  overflow: hidden;
+  
+  white-space: nowrap;
+  max-width: 139px;
+  min-width: 139px;
+  height: 28px;
+  transition: .3s;
+
+}
+
+.JetSetter_value { 
+  transition: .3s
+}
+.JetSetter_row:last-child, .JetSetter_row_empty:last-child {
+  margin-bottom: 0px;
+}
+#JetSetter:hover .JetSetter_row {
+
+  max-width: 320px;
+}
+.JetSetter_expand .JetSetter_row {
+  min-width: 320px;
+  max-width: 320px;
+ }
+.JetSetter_row_expand .JetSetter_value {
+  opacity: 0 !important;
+}
+.JetSetter_row_expand { 
+  height: 320px;
+}
+.JetSetter_row_expand .JetSetter_fader {
+  opacity: 0 !important;
+}
+
+
+
+.JetSetter_editor {
+  border-radius: 5px;
+  height: calc(100% - 36px);
+  box-shadow: 0 0 0 50px rgba(0,0,0,.3);
+  overflow: hidden;
+  transition: .3s;
+}
+
+.JetSetter_row_expand .JetSetter_editor {
+  box-shadow: 0 0 0 50px rgba(0,0,0,.6); 
+
+}
+
+.JetSetter_editor_header {
+  background: rgba(0,0,0,.3);
+  padding-left: 8px;
+}
+
+.JetSetter_editor_button {
+  float: right;
+  padding: 0 8px;
+  border-left: 1px solid rgba(0,0,0,.3);
+  transition: .2s;
+  cursor: pointer;
+}
+.JetSetter_editor_button:hover { 
+  color: #00A8E0;
+}
+
+.JetSetter_editor_content {
+  height: calc(100% - 31px);
+  overflow: scroll;
+  padding: 0 8px;
+  padding-top: 6px;
+  line-height: 20px !important;
+  word-wrap: none;
+  outline: none;
+
+  
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.JetSetter_editor_content_editing span { 
+  color: inherit !important;
+  line-height: 20px !important;
+}
+.JetSetter_fader { 
+  color: rgba(255,255,255,.24);
+  transition: .3s;
+}
+
+
+.JetSetter_value { 
+  color: rgba(255,255,255,.2) !important;
+  text-overflow: ellipsis;
+  transition: .3s;
+}
+
+#JetSetter pre {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  display: block;
+  list-style: none;
+  quotes: none;
+  content: none;
+  background: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 20px !important;
+  }
+
+.JetSetter_editor_title { 
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  height: 28px !important;
+  border: 0px solid transparent !important;
+  padding: 0px !important;
+  margin: 0px 1px !important;
+  color: #ccc !important;
+  text-indent: 0px !important;
+  line-height: 20px;
+  float: left;
+}
+
+.JetSetter_editor_title::-webkit-input-placeholder {
+   color: rgba(255,255,255,.2) !important;
+}
+
+.JetSetter_editor_title:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,.2) !important;  
+}
+
+.JetSetter_editor_title::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,.2) !important;  
+}
+
+.JetSetter_editor_title:-ms-input-placeholder {  
+   color: rgba(255,255,255,.2) !important;  
+}

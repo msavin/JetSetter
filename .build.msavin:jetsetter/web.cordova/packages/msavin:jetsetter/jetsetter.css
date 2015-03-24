@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Liberation Mono;
+    src: url('./Liberation.ttf');
+}
+
+#JetSetter {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0px;
+  background-color: rgba(53,53,53,.92);
+  color: #fff;
+  font-family: Liberation Mono, monospace;
+  z-index: 9999999999;
+  font-size: 14px;
+  line-height: 28px;
+  overflow: hidden; 
+}
+
+#JetSetter:hover {
+  max-width: auto;
+}
+
+.JetSetter_row, .JetSetter_row_empty {
+  margin-bottom: 1px;
+  padding: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(0,0,0,.2);
+  white-space: nowrap;
+  max-width: 136px;
+  transition: .3s;
+  color: rgba(255,255,255,.4);
+}
+
+.JetSetter_row:hover {
+  /*background: #000;*/
+  /*cursor: pointer; */
+}
+
+.JetSetter_row span, .JetSetter_row_empty span {
+  color: #fff;
+}
+
+#JetSetter:hover .JetSetter_row {
+  max-width: 1000px;
+  color: rgba(255,255,255,.6);
+}

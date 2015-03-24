@@ -1,0 +1,27 @@
+<body>
+	{{#if JetSetter_enabled}}
+		<div id="JetSetter">
+			{{> JetSetter_header}}
+			{{#each SessionItems}}
+				<div class="JetSetter_row">
+					<span>{{this}}</span>:
+					{{{value}}}
+				</div>
+			{{else}}
+				{{> JetSetter_empty}}
+			{{/each}}
+		</div>
+	{{/if}}
+</body>
+
+<template name="JetSetter_empty">
+	<div class="JetSetter_row_empty">
+		<span>None Found</span>
+	</div>
+</template>
+
+<template name="JetSetter_header">
+	<div class="JetSetter_row">
+		<strong style="color: #fff !important">JetSetter</strong>
+	</div>
+</template>

@@ -1,0 +1,25 @@
+{
+  "isopack-1": {
+    "name": "msavin:jetsetter",
+    "summary": "Get/Set Tool for Meteor Sessions",
+    "version": "0.1.0+c903a299010facca641ed023ab2556716a0d0f4a",
+    "earliestCompatibleVersion": "0.0.0",
+    "isTest": false,
+    "builds": [
+      {
+        "arch": "os",
+        "path": "os.json"
+      },
+      {
+        "arch": "web.browser",
+        "path": "web.browser.json"
+      },
+      {
+        "arch": "web.cordova",
+        "path": "web.cordova.json"
+      }
+    ],
+    "plugins": [],
+    "debugOnly": true
+  }
+}
