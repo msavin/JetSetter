@@ -1,4 +1,4 @@
-JetSetter  [![Join the chat at https://gitter.im/msavin/Mongol](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/msavin/Mongol?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+JetSetter [![Join the chat at https://gitter.im/msavin/Mongol](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/msavin/Mongol?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) <a href="https://gratipay.com/16f742ef619c/"><img src="https://img.shields.io/gratipay/16f742ef619c.svg"></a>
 ==================
 
 JetSetter is a Get/Set tool for Meteor Sessions. JetSetter keeps you out of the console by providing a visual abstraction for working with Session variables. 

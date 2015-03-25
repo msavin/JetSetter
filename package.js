@@ -1,7 +1,7 @@
 Package.describe({
   name:    'msavin:jetsetter',
   summary: 'Visual Get/Set Tool for Sessions',
-  version: '0.4.0',
+  version: '1.0.0',
   git:     'https://github.com/msavin/JetSetter.git',
   documentation: 'README.md',
   debugOnly: true
