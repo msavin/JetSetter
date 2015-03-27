@@ -48,13 +48,13 @@
 .JetSetter_editor {
   border-radius: 5px;
   height: calc(100% - 36px);
-  box-shadow: 0 0 0 50px rgba(0,0,0,.3);
+  box-shadow: 0 0 0 50px rgba(0,0,0,.35);
   overflow: hidden;
   transition: .3s;
 }
 
 .JetSetter_row_expand .JetSetter_editor {
-  box-shadow: 0 0 0 50px rgba(0,0,0,.6); 
+  box-shadow: 0 0 0 50px rgba(0,0,0,.68); 
 
 }
 
