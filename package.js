@@ -1,7 +1,7 @@
 Package.describe({
   name:    'msavin:jetsetter',
   summary: 'Visual Get/Set Tool for Sessions',
-  version: '1.0.3',
+  version: '1.0.4',
   git:     'https://github.com/msavin/JetSetter.git',
   documentation: 'README.md',
   debugOnly: true
@@ -26,7 +26,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use(['templating','tracker','session'], 'client');
   
-  api.use('meteortoys:toykit@0.2.1');
+  api.use('meteortoys:toykit@0.2.2');
   api.add_files(clientFiles, "client");
 
   if (api.export) {
