@@ -128,20 +128,24 @@
   }
 
 .JetSetter_editor_title { 
-  background: transparent;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
+  /* 
+    just so some frameworks form overwrites 
+    don't conflict with this one
+  */
+  background: transparent !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
   height: 28px !important;
   border: 0px solid transparent !important;
   padding: 0px !important;
   margin: 0px 1px !important;
   color: #ccc !important;
   text-indent: 0px !important;
-  line-height: 20px;
-  float: left;
-  max-width: 80%;
+  line-height: 20px !important;
+  float: left !important;
+  max-width: 80% !important;
 }
 
 .JetSetter_editor_title::-webkit-input-placeholder {
