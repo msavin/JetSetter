@@ -82,8 +82,7 @@
   line-height: 20px !important;
   word-wrap: none;
   outline: none;
-
-  
+  color: rgba(255,255,255,.06);
   -webkit-touch-callout: text;
   -webkit-user-select: text;
   -khtml-user-select: text;
@@ -93,8 +92,9 @@
 }
 
 .JetSetter_editor_content_editing span { 
-  color: inherit !important;
+
   line-height: 20px !important;
+  color: rgba(255,255,255,.06);
 }
 .JetSetter_fader { 
   color: rgba(255,255,255,.24);
@@ -123,6 +123,7 @@
   background: transparent;
   border-collapse: collapse;
   border-spacing: 0;
+  color: inherit;
   line-height: 20px !important;
   }
 
@@ -140,6 +141,7 @@
   text-indent: 0px !important;
   line-height: 20px;
   float: left;
+  max-width: 80%;
 }
 
 .JetSetter_editor_title::-webkit-input-placeholder {
