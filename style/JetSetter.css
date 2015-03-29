@@ -82,7 +82,7 @@
   line-height: 20px !important;
   word-wrap: none;
   outline: none;
-  color: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.6);
   -webkit-touch-callout: text;
   -webkit-user-select: text;
   -khtml-user-select: text;
@@ -94,7 +94,7 @@
 .JetSetter_editor_content_editing span { 
 
   line-height: 20px !important;
-  color: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.6) !important;
 }
 .JetSetter_fader { 
   color: rgba(255,255,255,.24);
