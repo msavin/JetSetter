@@ -10,11 +10,11 @@
   margin-bottom: 1px;
   padding: 0 7px;
   overflow: hidden;
-  cursor: pointer;
   white-space: nowrap;
   max-width: 139px;
   min-width: 139px;
   height: 28px;
+  cursor: pointer;
   -webkit-transition: all .3s;
   -moz-transition:    all .3s;
   -ms-transition:     all .3s;
@@ -34,7 +34,6 @@
   margin-bottom: 0px;
 }
 #JetSetter:hover .JetSetter_row {
-
   max-width: 320px;
 }
 .JetSetter_expand .JetSetter_row {
@@ -44,13 +43,15 @@
  }
 .JetSetter_expand {
   z-index: 2147483647;
-  cursor: default;
+  
 }
 .JetSetter_row_expand .JetSetter_value {
   opacity: 0 !important;
+  
 }
 .JetSetter_row_expand { 
   height: 320px;
+  cursor: default;
 }
 .JetSetter_row_expand .JetSetter_fader {
   opacity: 0 !important;
@@ -61,7 +62,7 @@
   height: calc(100% - 36px);
   box-shadow: 0 0 0 50px rgba(0,0,0,.35);
   overflow: hidden;
-
+  width: 100%;
 }
 
 .JetSetter_row:hover .JetSetter_editor {

@@ -1,4 +1,4 @@
-Template.body.helpers({
+Template.JetSetter.helpers({
     expanded: function () {
         var current = Session.get("JetSetter_current");
         if (current) {
@@ -6,10 +6,8 @@ Template.body.helpers({
         }
     },
     SessionItems: function () {
-        // Hide the JetSetter session
-        var array = Session.get("JetSetter");
 
-        // Return just the developers sessions
+        var array = Session.get("JetSetter");
         return array;
     }
 });
