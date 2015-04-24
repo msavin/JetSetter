@@ -10,17 +10,25 @@
   margin-bottom: 1px;
   padding: 0 7px;
   overflow: hidden;
-  
+  cursor: pointer;
   white-space: nowrap;
   max-width: 139px;
   min-width: 139px;
   height: 28px;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -moz-transition:    all .3s;
+  -ms-transition:     all .3s;
+  -o-transition:      all .3s;
+  transition:         all .3s;
 
 }
 
 .JetSetter_value { 
-  transition: .3s
+  -webkit-transition: all .3s;
+  -moz-transition:    all .3s;
+  -ms-transition:     all .3s;
+  -o-transition:      all .3s;
+  transition:         all .3s;
 }
 .JetSetter_row:last-child, .JetSetter_row_empty:last-child {
   margin-bottom: 0px;
@@ -36,6 +44,7 @@
  }
 .JetSetter_expand {
   z-index: 2147483647;
+  cursor: default;
 }
 .JetSetter_row_expand .JetSetter_value {
   opacity: 0 !important;
@@ -47,19 +56,20 @@
   opacity: 0 !important;
 }
 
-
-
 .JetSetter_editor {
   border-radius: 5px;
   height: calc(100% - 36px);
   box-shadow: 0 0 0 50px rgba(0,0,0,.35);
   overflow: hidden;
-  transition: .3s;
+
+}
+
+.JetSetter_row:hover .JetSetter_editor {
+  box-shadow: 0 0 0 50px rgba(0,0,0,.68); 
 }
 
 .JetSetter_row_expand .JetSetter_editor {
   box-shadow: 0 0 0 50px rgba(0,0,0,.68); 
-
 }
 
 .JetSetter_editor_header {
@@ -71,7 +81,11 @@
   float: right;
   padding: 0 8px;
   border-left: 1px solid rgba(0,0,0,.3);
-  transition: .2s;
+  -webkit-transition: all .2s;
+  -moz-transition:    all .2s;
+  -ms-transition:     all .2s;
+  -o-transition:      all .2s;
+  transition:         all .2s;
   cursor: pointer;
 }
 .JetSetter_editor_button:hover { 
@@ -102,14 +116,22 @@
 }
 .JetSetter_fader { 
   color: rgba(255,255,255,.24);
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -moz-transition:    all .3s;
+  -ms-transition:     all .3s;
+  -o-transition:      all .3s;
+  transition:         all .3s;
 }
 
 
 .JetSetter_value { 
   color: rgba(255,255,255,.2) !important;
   text-overflow: ellipsis;
-  transition: .3s;
+  -webkit-transition: all .3s;
+  -moz-transition:    all .3s;
+  -ms-transition:     all .3s;
+  -o-transition:      all .3s;
+  transition:         all .3s;
 }
 
 #JetSetter pre {
@@ -133,7 +155,7 @@
 
 .JetSetter_editor_title { 
   /* 
-    just so some frameworks form overwrites 
+    Just so CSS framework form overwrites 
     don't conflict with this one
   */
   background: transparent !important;
