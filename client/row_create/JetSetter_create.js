@@ -1,22 +1,10 @@
 Template.JetSetter_create.events({
     'click .JetSetter_row': function () {
-
-        var current = String(Session.get("JetSetter_current"));
-        var target  = "JetSetter_create";
-
-        if (current === target) {
-        	Session.set("JetSetter_current", null);
-        } else {
-        	Session.set("JetSetter_current", target);
-
-            // Focus on input
-            window.setTimeout(function() {
-                $(".JetSetter_editor_title}").focus();
-            }, 300);
-        }
-    },
-    'click .JetSetter_editor': function (e, t) {
-        e.stopPropagation();
+        // Focus on input
+        window.setTimeout(function() {
+            $(".JetSetter_editor_title}").focus();
+        }, 300);
+        
     },
     'click .JetSetter_button_new': function () {
         // get values
@@ -57,16 +45,3 @@ Template.JetSetter_create.events({
 
     }
 });
-
-Template.JetSetter_create.helpers({
-	expand: function () {
-		
-		var current = String(Session.get("JetSetter_current"));
-
-		if (current === "JetSetter_create") {
-			return "JetSetter_row_expand"
-		}
-
-	}
-});
-

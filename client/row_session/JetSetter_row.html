@@ -1,6 +1,8 @@
 <template name="JetSetter_row">
-	<div class="JetSetter_row {{expand}}" id="JetSetter_{{this}}">
+	{{#JetSetter_Component name=this}}
+
 		{{this}}<span class="JetSetter_fader">: {{{value}}}</span>
-			{{> JetSetter_editor}}
-	</div>
+		{{> JetSetter_editor}}
+
+	{{/JetSetter_Component}}
 </template>

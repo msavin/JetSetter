@@ -32,7 +32,11 @@
 .JetSetter_expand .JetSetter_row {
   min-width: 320px;
   max-width: 320px;
+
  }
+.JetSetter_expand {
+  z-index: 2147483647;
+}
 .JetSetter_row_expand .JetSetter_value {
   opacity: 0 !important;
 }
