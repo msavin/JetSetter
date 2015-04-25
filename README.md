@@ -1,4 +1,6 @@
-JetSetter [![Join the chat at https://gitter.im/msavin/Mongol](https://badges.gitter.im/Join%20Chat.svg)]
+<img src="https://raw.githubusercontent.com/msavin/JetSetter/master/documentation/images/cover.gif">
+
+JetSetter
 ==================
 
 JetSetter is a Get/Set tool for Meteor Sessions. JetSetter keeps you out of the console by providing a visual abstraction for working with Session variables. 
