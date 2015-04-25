@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/msavin/JetSetter/master/documentation/images/cover.gif">
+<img src="https://raw.githubusercontent.com/msavin/JetSetter/master/documentation/images/cover.png">
 
 JetSetter
 ==================
