@@ -1,17 +1,18 @@
 Package.describe({
   name:    'msavin:jetsetter',
   summary: 'Visual Get/Set Tool for Sessions',
-  version: '1.1.0',
+  version: '1.0.12',
   git:     'https://github.com/msavin/JetSetter.git',
   documentation: 'README.md',
-  debugOnly: true
+  // debugOnly: true
 });
 
 Package.onUse(function(api) {
 
   var clientFiles = [
-  	"client/JetSetter.html",
-    "client/JetSetter.js",
+  	"client/main.html",
+    "client/main.js",
+    "client/functions.js",
     "client/row_create/JetSetter_create.html",
     "client/row_create/JetSetter_create.js",
     "client/row_editor/JetSetter_editor.html",
@@ -28,7 +29,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use(['templating','tracker','session'], 'client');
   
-  api.use('meteortoys:toykit@0.3.4');
+  api.use('meteortoys:toykit@0.3.5');
   api.add_files(clientFiles, "client");
 
   if (api.export) {

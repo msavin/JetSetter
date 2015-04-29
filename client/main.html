@@ -1,0 +1,39 @@
+<body>
+	{{> JetSetter}}
+</body>
+
+<template name="JetSetter">
+
+	{{#if MeteorToys}}
+
+		<div id="JetSetter" class="MeteorToys {{expanded}}">
+			
+			{{#if MeteorToys_Pro}}
+				
+				{{> JetSetter_header_pro}}
+				{{> JetSetter_create}}
+				
+				{{#each SessionItems}}
+					{{> JetSetter_row}}
+				{{/each}}
+
+				{{#if MeteorToys_Pro}} 
+
+				{{/if}}
+
+			{{else}}
+
+				{{> JetSetter_header}}
+				{{> JetSetter_create}}
+
+				{{#each SessionItems}}
+					{{> JetSetter_row}}
+				{{/each}}
+
+			{{/if}}
+
+		</div>
+
+	{{/if}}
+	
+</template>

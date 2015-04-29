@@ -1,19 +1,6 @@
-Template.JetSetter.helpers({
-    expanded: function () {
-        var current = Session.get("JetSetter_current");
-        if (current) {
-            return "JetSetter_expand"
-        }
-    },
-    SessionItems: function () {
-
-        var array = Session.get("JetSetter");
-        return array;
-    }
-});
-
 JetSetter = {
     getKeys: function () {
+
         var keys = Object.getOwnPropertyNames(Session.keys);
         
         keys = JetSetter.arrayCleaner(keys, "Mongol");
@@ -22,6 +9,7 @@ JetSetter = {
         keys = JetSetter.arrayCleaner(keys, "Meteor.");
 
         Session.set("JetSetter", keys);
+
     },
     arrayCleaner: function(array, toRemove) {
         
@@ -38,7 +26,11 @@ JetSetter = {
 
     },
     'colorize': function (json) {
+      
+      // Should merge this out of here and Mongol into ToyKit
+      
       // colorized the JSON objects
+      
       if (typeof json != 'string') {
         json = JSON.stringify(json, undefined, 2);
       }
@@ -58,5 +50,6 @@ JetSetter = {
         }
         return '<span class="' + cls + '">' + match + '</span>';
       });
+
     },
 }
