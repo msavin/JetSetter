@@ -9,8 +9,16 @@
       "1.0.1"
     ],
     [
+      "binary-heap",
+      "1.0.1"
+    ],
+    [
       "blaze",
       "2.0.3"
+    ],
+    [
+      "callback-hook",
+      "1.0.1"
     ],
     [
       "check",
@@ -62,7 +70,7 @@
     ],
     [
       "meteortoys:toykit",
-      "0.2.2"
+      "0.5.0"
     ],
     [
       "minimongo",

@@ -60,7 +60,7 @@
 .JetSetter_editor {
   border-radius: 5px;
   height: calc(100% - 36px);
-  box-shadow: 0 0 0 50px rgba(0,0,0,.35);
+  box-shadow: 0 0 0 50px rgba(0,0,0,.3);
   overflow: hidden;
   width: 100%;
 }

@@ -1,10 +1,9 @@
-<a href="http://bit.ly/1ARJG4x"><img align="center" src="https://raw.githubusercontent.com/msavin/Mongol/master/documentation/ad.png"></a>
+<a href="http://bit.ly/1ARJG4x"><img align="center" src="http://maxsavin.com/sandbox/MeteorToysAd.png"></a>
 
 JetSetter 
 =========
 
 Meet JetSetter, the insanely handy development package for Meteor. Starting today, you'll never have to enter the console to play with your Session variables again. Instead, JetSetter lets you view and modify your Session variables in the browser. And because JetSetter is a debugOnly package, it does not compile to production code.
-
 
 
 See All Your Sessions at Once

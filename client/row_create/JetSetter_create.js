@@ -2,11 +2,12 @@ Template.JetSetter_create.events({
     'click .JetSetter_row': function () {
         // Focus on input
         window.setTimeout(function() {
-            $(".JetSetter_editor_title}").focus();
+            $(".JetSetter_editor_title").focus();
         }, 300);
         
     },
     'click .JetSetter_button_new': function () {
+        
         // get values
         var js_key    = $(".JetSetter_editor_title").val(),
             js_value  = $(".JetSetter_editor_create").text(),

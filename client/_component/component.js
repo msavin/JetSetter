@@ -22,8 +22,7 @@ Template.JetSetter_Component.events({
 		} else {
 			Session.set("JetSetter_current", target);
 		}
-		console.log(this.name);
-		console.log(target);
+		
 	},
 	'click .JetSetter_editor': function (e, t) {
 	    e.stopPropagation();
