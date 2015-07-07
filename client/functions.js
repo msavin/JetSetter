@@ -1,14 +1,13 @@
+
+// Initialize Dict
+MeteorToysDict = Package["meteortoys:toykit"].MeteorToysDict;
+
 JetSetter = {
     getKeys: function () {
 
         var keys = Object.getOwnPropertyNames(Session.keys);
-        
-        keys = JetSetter.arrayCleaner(keys, "Mongol");
-        keys = JetSetter.arrayCleaner(keys, "MeteorToys");
-        keys = JetSetter.arrayCleaner(keys, "JetSetter");
         keys = JetSetter.arrayCleaner(keys, "Meteor.");
-
-        Session.set("JetSetter", keys);
+        MeteorToysDict.set("JetSetter", keys);
 
     },
     arrayCleaner: function(array, toRemove) {
@@ -30,7 +29,6 @@ JetSetter = {
       // Should merge this out of here and Mongol into ToyKit
       
       // colorized the JSON objects
-      
       if (typeof json != 'string') {
         json = JSON.stringify(json, undefined, 2);
       }

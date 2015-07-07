@@ -1,6 +1,6 @@
 Template.JetSetter_editor.events({
 	'click .JetSetter_button_edit': function () {
-		Session.set("JetSetter_settings_edit", true)
+		MeteorToysDict.set("JetSetter_settings_edit", true)
 	},
 	'click .JetSetter_button_save': function () {
 		
@@ -24,18 +24,18 @@ Template.JetSetter_editor.events({
 			Session.set(this, newObject)	
 		}
 
-		Session.set("JetSetter_settings_edit", false);
+		MeteorToysDict.set("JetSetter_settings_edit", false);
 
 	},
 	'click .JetSetter_button_cancel': function () {
-		Session.set("JetSetter_settings_edit", false)
+		MeteorToysDict.set("JetSetter_settings_edit", false)
 	},
 	'click .JetSetter_editor': function (e, t) {
 		e.stopPropagation();
 	},
 	'click .JetSetter_button_drop': function () {
 		
-		Session.set("JetSetter_current", null)
+		MeteorToysDict.set("JetSetter_current", null)
 		currentSession = this; 
 
 		window.setTimeout(function() {
@@ -54,6 +54,6 @@ Template.JetSetter_editor.helpers({
 		return JetSetter.colorize(stringed);
 	},
 	editing: function () {
-		return Session.get("JetSetter_settings_edit");
+		return MeteorToysDict.get("JetSetter_settings_edit");
 	}
 });

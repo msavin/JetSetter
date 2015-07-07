@@ -1,7 +1,7 @@
 Template.JetSetter_Component.helpers({
 	expand: function () {
 	    
-	    var current = String(Session.get("JetSetter_current"));
+	    var current = String(MeteorToysDict.get("JetSetter_current"));
 	    var item    = "JetSetter_" + String(this.name);
 
 	    if (current === item) {
@@ -14,13 +14,13 @@ Template.JetSetter_Component.helpers({
 Template.JetSetter_Component.events({
 	'click .JetSetter_row': function () {
 
-		var current = String(Session.get("JetSetter_current"));
+		var current = String(MeteorToysDict.get("JetSetter_current"));
 		var target  = "JetSetter_" + String(this.name);
 
 		if (current === target) {
-			Session.set("JetSetter_current", null);
+			MeteorToysDict.set("JetSetter_current", null);
 		} else {
-			Session.set("JetSetter_current", target);
+			MeteorToysDict.set("JetSetter_current", target);
 		}
 		
 	},
